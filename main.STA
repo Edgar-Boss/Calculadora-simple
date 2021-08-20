@@ -1,0 +1,67 @@
+
+ROM used:   4538/32768 (14%)
+            4538/32768 (14%) including unused fragments
+
+            2.7 Average locations per line
+            16.9 Average locations per statement
+
+RAM used:   28/2048 (1%) at main() level
+            50/2048 (2%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  229   141  53  main.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  456    84  31  C:\Program Files (x86)\PICC\Drivers\lcd.c
+  135    43  16  kbd1.c
+----- -----
+ 1657   268 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   0    1             @delay_ms1
+0     62   1    3   596  5.9  lcd_read_byte
+0     12   0    0    59  4.2  lcd_read_nibble
+0     24   0    1   179  3.3  lcd_send_nibble
+0     58   1    3   460  4.7  lcd_send_byte
+0    120   1    6   814  7.2  lcd_init
+0     34   0    4   208  6.3  lcd_gotoxy
+0     80   1    1   354  4.7  lcd_putc
+0     32   0    0             @const685
+0      4   0    0     3  0.0  kbd_init
+0    190   2    4  5861 10.2  kbd_getc
+0     34   0    0             @goto10681
+0   1790  20    6  6783  7.9  MAIN
+0    242   3   11             @MULFF
+0     54   1    2             @ITOF
+0    618   7   16             @ADDFF
+0     40   0    3             @DIV88
+0    170   2    6             @PRINTF_D_672
+0     64   1    5             @FTOSD
+0    142   2   13             @DIV3232
+0    376   4   13             @PRINTF_L32D_672FPFPF
+0    348   4   14             @DIVFF
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               10
+    Statements              268
+    Comments                285
+    Volume (V)              19779
+    Difficulty (D)          51.7
+    Effort to implement (E) 1023136
+    Time to implement (T)   15 hours, 47 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   44
+    Maintainability (MI)    123
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  4534  28230  
+
+
+

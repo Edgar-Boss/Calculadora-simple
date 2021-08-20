@@ -1,0 +1,174 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     kbd_getc.kbd_call_count
+005.0   kbd_getc.kbd_down
+006     kbd_getc.last_key
+007     kbd_getc.col
+008     x
+009     y
+00A-00D A
+00E-011 B
+012-015 c
+016     MAIN.K
+017     MAIN.T
+018-01B @PRINTF_L32D_672FPFPF.P1
+018     @PRINTF_D_672.P2
+018-01B @DIVFF.P3
+018     lcd_init.i
+018     kbd_getc.kchar
+018     MAIN.@SCRATCH1
+019     @PRINTF_D_672.P1
+019     kbd_getc.row
+019-01C lcd_init.LCD_INIT_STRING
+019     MAIN.@SCRATCH2
+01A     kbd_getc.@SCRATCH1
+01A     MAIN.@SCRATCH3
+01A     @PRINTF_D_672.@SCRATCH1
+01B     kbd_getc.@SCRATCH2
+01B     MAIN.@SCRATCH4
+01B     @PRINTF_D_672.@SCRATCH2
+01C-01F @ADDFF.P1
+01C     @PRINTF_L32D_672FPFPF.P2
+01C-01F @DIVFF.P3
+01C-01D @ITOF.P4
+01C     @PRINTF_D_672.@SCRATCH3
+01D     lcd_init.@SCRATCH1
+01D     @PRINTF_D_672.@SCRATCH4
+01D     @PRINTF_L32D_672FPFPF.@SCRATCH1
+01E     @DIV88.P1
+01E     @PRINTF_L32D_672FPFPF.@SCRATCH2
+01F     @DIV88.P1
+01F     @PRINTF_L32D_672FPFPF.@SCRATCH3
+020-023 @ADDFF.P1
+020     @DIV88.@SCRATCH1
+020     @PRINTF_L32D_672FPFPF.@SCRATCH4
+020     @DIVFF.@SCRATCH1
+021     @PRINTF_L32D_672FPFPF.@SCRATCH5
+021     @DIVFF.@SCRATCH2
+022     @PRINTF_L32D_672FPFPF.@SCRATCH6
+022     @DIVFF.@SCRATCH3
+023     @PRINTF_L32D_672FPFPF.@SCRATCH7
+023     @DIVFF.@SCRATCH4
+024     @ADDFF.@SCRATCH1
+024     @PRINTF_L32D_672FPFPF.@SCRATCH8
+024     @DIVFF.@SCRATCH5
+025-028 @FTOSD.P1
+025     lcd_putc.c
+025-028 @MULFF.P1
+025-028 @DIV3232.P2
+025     @ADDFF.@SCRATCH2
+025     @DIVFF.@SCRATCH6
+026     lcd_gotoxy.x
+026     @delay_ms1.P1
+026     @ADDFF.@SCRATCH3
+027     lcd_gotoxy.y
+027     @ADDFF.@SCRATCH4
+028     lcd_gotoxy.address
+028     @ADDFF.@SCRATCH5
+029-02C @MULFF.P1
+029-02C @DIV3232.P2
+029     lcd_gotoxy.@SCRATCH1
+029     @ADDFF.@SCRATCH6
+029     @FTOSD.@SCRATCH1
+02A     lcd_send_byte.address
+02A     @ADDFF.@SCRATCH7
+02B     lcd_send_byte.n
+02B     @ADDFF.@SCRATCH8
+02C     lcd_read_byte.low
+02C     lcd_send_byte.@SCRATCH1
+02D     lcd_send_nibble.n
+02D     lcd_read_byte.high
+02D     @MULFF.@SCRATCH1
+02D     @DIV3232.@SCRATCH1
+02E     lcd_read_byte.@SCRATCH1
+02E     @MULFF.@SCRATCH2
+02E     @DIV3232.@SCRATCH2
+02F     @MULFF.@SCRATCH3
+02F     @DIV3232.@SCRATCH3
+030     @DIV3232.@SCRATCH4
+031     @DIV3232.@SCRATCH5
+F81     kbd
+F83     lcd
+F83     PSP_DATA
+F8C     lcdlat
+F95     lcdtris
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  KEYS.call
+000014  KEYS.data
+000024  @delay_ms1
+00004C  lcd_send_nibble
+000064  lcd_read_nibble
+000070  lcd_read_byte
+0000AE  lcd_send_byte
+0000E8  lcd_init
+000160  kbd_init
+000164  kbd_getc
+000222  @goto10681
+000244  @MULFF
+000336  @ITOF
+00036C  @ADDFF
+0005D6  lcd_gotoxy
+0005F8  @DIV88
+000620  lcd_putc
+000670  @PRINTF_D_672
+00071A  @FTOSD
+00075A  @DIV3232
+0007E8  @PRINTF_L32D_672FPFPF
+000960  @DIVFF
+000ABC  MAIN
+000ABC  @cinit1
+000AE8  @cinit2
+
+Project Directory:
+    F:\BUAP\Microprocesadores\Practicas\Calculadora\
+
+Project Files:
+    main.c                                                  [29-oct.-20 17:46  CRC=789D81BE]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-nov.-13 13:35  CRC=5337E248]
+    C:\Program Files (x86)\PICC\Drivers\lcd.c               [19-sep.-13 14:38  CRC=D1A6378A]
+    kbd1.c                                                  [28-oct.-20 20:42  CRC=ADACD6A8]
+
+Source signature=F8D548E0
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

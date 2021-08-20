@@ -1,0 +1,19 @@
+[PROJECT]
+Target=F:\BUAP\Microprocesadores\Practicas\Calculadora\teclado.hex
+Processor_Text=PIC18F4550
+CCSVerions=5.015
+Compiler=PCH
+[Target Data]
+FileList=teclado.c
+[Directories]
+Include=
+[F:\BUAP\Microprocesadores\Practicas\Calculadora\teclado]
+Type=4
+[mru-list]
+1=teclado.c
+[Units]
+Count=1
+1=teclado (main)
+[Opened Files]
+1=teclado.c
+2=

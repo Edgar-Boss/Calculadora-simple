@@ -1,0 +1,140 @@
+ÀÄmain
+   ÀÄMAIN  0/1790  Ram=6
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄlcd_init  0/120  Ram=6
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÃÄlcd_send_nibble  0/24  Ram=1
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÃÄlcd_send_nibble  0/24  Ram=1
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÀÄlcd_send_byte  0/58  Ram=3
+      ³     ÃÄlcd_read_byte  0/62  Ram=3
+      ³     ³  ÃÄlcd_read_nibble  0/12  Ram=0
+      ³     ³  ÀÄlcd_read_nibble  0/12  Ram=0
+      ³     ÃÄlcd_send_nibble  0/24  Ram=1
+      ³     ÀÄlcd_send_nibble  0/24  Ram=1
+      ÃÄkbd_init  0/4  Ram=0
+      ÃÄkbd_getc  0/190  Ram=4
+      ³  ÃÄ@goto10681  0/34  Ram=0
+      ³  ÀÄ@const685  0/32  Ram=0
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄlcd_send_byte  0/58  Ram=3
+      ³     ÀÄ*
+      ÃÄ@PRINTF_D_672  0/170  Ram=6
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄlcd_putc  0/80  Ram=1
+      ³  ³  ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_send_byte  0/58  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ³  ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄlcd_send_byte  0/58  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄlcd_send_byte  0/58  Ram=3
+      ³  ³     ÀÄ*
+      ³  ÃÄlcd_putc  0/80  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_putc  0/80  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄlcd_putc  0/80  Ram=1
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄkbd_getc  0/190  Ram=4
+      ³  ÀÄ*
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_D_672  0/170  Ram=6
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_L32D_672FPFPF  0/376  Ram=13
+      ³  ÃÄ@MULFF  0/242  Ram=11
+      ³  ÃÄ@FTOSD  0/64  Ram=5
+      ³  ÃÄ@DIV3232  0/142  Ram=13
+      ³  ÃÄlcd_putc  0/80  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_putc  0/80  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_putc  0/80  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_putc  0/80  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÀÄ@DIV3232  0/142  Ram=13
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄkbd_getc  0/190  Ram=4
+      ³  ÀÄ*
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_D_672  0/170  Ram=6
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_L32D_672FPFPF  0/376  Ram=13
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄkbd_getc  0/190  Ram=4
+      ³  ÀÄ*
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_D_672  0/170  Ram=6
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_L32D_672FPFPF  0/376  Ram=13
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_putc  0/80  Ram=1
+      ³  ÀÄ*
+      ÃÄkbd_getc  0/190  Ram=4
+      ³  ÀÄ*
+      ÃÄ@MULFF  0/242  Ram=11
+      ÃÄ@ITOF  0/54  Ram=2
+      ÃÄ@ADDFF  0/618  Ram=16
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_D_672  0/170  Ram=6
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄ@DIVFF  0/348  Ram=14
+      ÃÄlcd_gotoxy  0/34  Ram=4
+      ³  ÀÄ*
+      ÃÄ@PRINTF_L32D_672FPFPF  0/376  Ram=13
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÀÄlcd_putc  0/80  Ram=1
+         ÀÄ*

@@ -1,0 +1,4 @@
+#include<18f4550.h>
+#fuses hs,nowdt
+#use delay(clock=4000000)
+#include<lcd.c>
